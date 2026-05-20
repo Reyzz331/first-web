@@ -1,0 +1,106 @@
+.header{
+ display: flex;
+ justify-content: space-between;
+ background-color: rgb(133, 129, 129);
+ align-items: center;
+ border-radius: 30px;
+ 
+}
+.header img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 2px 2px 0px black;
+    display: inline-block;
+    transition: all 0.5s ease;
+    
+}
+.header img:hover{
+    transform: translate(-2px, -2px);
+}
+.header a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 253, 253);
+    font-family: arial;
+    display: inline-block;
+    background-color: rgb(181, 199, 199);
+    padding: 10px 10px;
+    border-radius: 30px;
+    display: inline-block;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0px black;
+    transition: all 0.5s ease;
+    
+}
+.header a:hover{
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px black;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-between;
+}
+.middle img{
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: right;
+    
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 100px 50px;
+    gap: 20px;
+}
+.footer img{
+     height: 50px;
+      width: 50px;
+       border-radius: 50%;
+       object-fit: cover; /*biar gambarnya tidak gepenk*/
+object-position: center;
+transition: all 0.5s ease;
+       
+    }
+    .footer img:hover{
+        transform: translate(-2px,-2px);
+        box-shadow: 4px 4px 0px black;
+    }
+body{
+    background-image: url(andrew-ly-KZ0SZ2fEd20-unsplash.jpg);
+    background-size: cover;
+    color: white;
+    
+}
+@media (max-width: 768px) {
+    .header{
+        flex-direction: column;
+        
+        
+    }
+    .header a {
+       
+        font-size: 20px;
+    }
+    .middle{
+        justify-content: center;
+        text-align: center;
+            }
+            .middle img{
+                flex-direction: column;
+                justify-content: center;
+            }
+            body{
+                flex-direction: column;
+                justify-content: center;
+            }
+    
+}
